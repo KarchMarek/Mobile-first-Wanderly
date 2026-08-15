@@ -29,17 +29,19 @@ button{
 }
 
 /* HEADER */
+/* Mobile S-M */
 .nav-bar .container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
+    align-items: end;
+    padding: 1rem 1rem 1rem 1.1rem;
     border-bottom: 0.2rem solid lightgray;
 }
 
 .logo{
     display: flex;
-    align-items: center;
+    align-items: end;
     font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: -0.05rem;
@@ -82,7 +84,7 @@ button{
     width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 0.8rem;
+    gap: 1.3rem;
     margin-top: 1rem;
 }
 
@@ -91,13 +93,50 @@ button{
     font-weight: 600;
 }
 
-@media screen and (max-width: 768px){
-    .nav-bar .container{
-        flex-wrap: wrap;
+.main-nav a:hover,
+.main-nav a:focus{
+    font-size: 1.05rem;
+    font-weight: 800;
+}
+
+/* Mobile L */
+@media screen and (min-width: 425px){
+    .logo{
+        font-size: 1.2rem;
+    }
+
+    .logo-icon img{
+        width: 2.7rem;
+    }
+    
+    .main-nav a{
+        font-size: 1.05rem;
+    }
+
+    .main-nav a:hover,
+    .main-nav a:focus{
+        font-size: 1.10rem;
+    }
+
+    .menu-toggle{
+        font-size: 1.4rem;
     }
 }
 
+/* Tablet */
 @media screen and (min-width: 768px){
+    .nav-bar .container{
+        padding: 1rem 1.75rem;
+    }
+
+    .logo{
+        font-size: 1.3rem;
+    }
+
+    .logo-icon img{
+        width: 2.8rem;
+    }
+    
     .menu-toggle{
         display: none;
     }
@@ -106,9 +145,47 @@ button{
         display: block;
     }
 
+    .main-nav a{
+        font-size: 1.1rem;
+    }
+
+    .main-nav a:hover,
+    .main-nav a:focus{
+        font-size: 1.15rem;
+    }
+
     .main-nav ul{
         display: flex;
         gap: 2rem;
-        padding-right: 2rem;
+        padding-right: 0.75rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px){
+    .nav-bar .container{
+        padding: 1rem 3rem;
+    }
+
+    .logo{
+        font-size: 1.4rem;
+    }
+
+    .logo-icon img{
+        width: 3rem;
+    }
+
+    .main-nav a{
+        font-size: 1.15rem;
+    }
+
+    .main-nav a:hover,
+    .main-nav a:focus{
+        font-size: 1.2rem;
+    }
+
+    .main-nav ul{
+        gap: 2.5rem;
+        padding-right: 0.5rem;
     }
 }
