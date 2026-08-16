@@ -189,3 +189,20 @@ button{
         padding-right: 0.5rem;
     }
 }
+
+/* MAIN */
+/* Section Hero*/
+.hero{
+    min-height: 350px;
+    background-image: url("../img/hero1-small.jpg");
+    background-size: cover;
+    background-position: 90% center;
+}
+
+.hero .container{
+
+}
+
+.container h1{
+    margin-top: 0;
+}
