@@ -194,7 +194,7 @@ button{
 /* Section Hero*/
 .hero{
     min-height: 350px;
-    background-image: url("../img/hero1-small.jpg");
+    background-image: url("../img/hero-small.jpg");
     background-size: cover;
     background-position: 90% center;
 }
