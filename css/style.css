@@ -355,3 +355,60 @@ button{
         min-height: 560px;
     }
 }
+
+/* Section Benefits*/
+.benefits .container{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    text-align: center;
+    color: #1f3d2e;
+    margin-top: 1rem;
+    padding: 0 1.8rem;
+}
+
+.benefit{
+    p{
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    i{
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 768px){
+    .benefits .container{
+        margin-top: 1.8rem;
+        gap: 15%;
+}
+
+    .benefit{
+        p{
+            font-size: 1rem;
+        }
+
+        i{
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    .benefits .container{
+        margin-top: 2.6rem;
+}
+
+    .benefit{
+        p{
+            margin-top: 0.8rem;
+            font-size: 1.3rem;
+        }
+
+        i{
+            font-size: 2rem;
+        }
+    }
+}
