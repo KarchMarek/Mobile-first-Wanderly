@@ -120,4 +120,5 @@ Additional JavaScript functionality may also be added as the project develops.
 ## 📌 Project Status
 
 **Currently:** Homepage completed and responsive.
+
 **Next:** Development of additional website pages and functionality.
