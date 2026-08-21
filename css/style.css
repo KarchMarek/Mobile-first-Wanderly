@@ -387,11 +387,11 @@ button{
 
     .benefit{
         p{
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
 
         i{
-            font-size: 1.6rem;
+            font-size: 1.8rem;
         }
     }
 }
@@ -410,5 +410,219 @@ button{
         i{
             font-size: 2rem;
         }
+    }
+}
+
+/*Section Destinations*/
+.destinations .container{
+    padding-bottom: 2rem;
+
+    h2{
+        text-align: center;
+        color: #1f3d2e;
+        font-size: 1.4rem;
+        font-family: Georgia, 'Times New Roman', serif;
+        margin: 1.5rem 0 1rem;
+    }
+
+    h2::after{
+        content: "";
+        display: block;
+        margin: 0.8rem auto 0;
+        width: 2.5rem;
+        border-bottom: 3px solid #1f3d2e;
+    }
+}
+
+.destination-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.destination-card{
+    background-size: cover;
+    aspect-ratio: 2.5/1;
+    height: auto;
+    width: 100%;
+    position: relative;
+
+    border-radius: 5px;
+
+    h3{
+        margin: 0;
+        position: absolute;
+        bottom: 45%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.3rem;
+        color: #fff;
+        font-family: Georgia, 'Times New Roman', serif;
+        -webkit-text-stroke: 0.3px #020407;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+        z-index: 2;
+    }
+
+    a{
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1rem;
+        font-weight: 700;
+        color: #fff;
+        -webkit-text-stroke: 0.3px #020407;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+        z-index: 2;
+    }
+
+    a:hover{
+        font-weight: 800;
+        font-size: 1.1rem;
+    }
+}
+
+.destination-card::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.destination-italy{
+    background-image: url(../img/destinations/italy-small.jpg);
+}
+
+.destination-norway{
+    background-image: url(../img/destinations/norway-small.jpg);   
+}
+
+.destination-bali{
+    background-image: url(../img/destinations/bali-small.jpg);
+}
+
+@media (min-width: 768px){
+    .destinations .container{
+        padding-bottom: 3rem;
+
+        h2{
+            font-size: 1.7rem;
+            margin: 1.5rem;
+        }
+    }
+    
+    .destination-cards{
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .destination-card{
+        aspect-ratio: auto;
+        height: clamp(230px, 28vw, 350px);
+        flex: 1;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-color: #f2f2f2;
+        border-radius: 8px;
+
+        h3{
+            left: 1rem;
+            bottom: 2.5rem;
+            transform: none;
+
+            color: #020407;
+            font-size: 1.2rem;
+            text-shadow: none;
+            -webkit-text-stroke: 0;
+        }
+
+        a{
+            left: 1rem;
+            bottom: 0.8rem;
+            transform: none;
+
+            color: #020407;
+            font-size: 1rem;
+            font-weight: 600;
+            text-shadow: none;
+            -webkit-text-stroke: 0;
+        }
+
+        a:hover{
+            color: #1b591e;;
+        }
+    }
+
+    .destination-card::before{
+        display: none;
+    }
+
+
+    .destination-italy{
+        background-image: url(../img/destinations/italy-medium.jpg);
+    }
+
+    .destination-norway{
+        background-image: url(../img/destinations/norway-medium.jpg);   
+    }
+
+    .destination-bali{
+        background-image: url(../img/destinations/bali-medium.jpg);
+    }
+}
+
+@media (min-width: 1024px){
+    .destinations .container{
+        padding: 0 3rem 4rem;
+
+        h2{
+            font-size: 2.2rem;
+            margin: 1rem 0 2rem 0;
+        }
+
+        h2::after{
+            margin: 1.2rem auto 0;
+            width: 3.5rem;
+            border-bottom: 3.5px solid #1f3d2e;
+        }
+    }
+
+    .destination-cards{
+        gap: 1.5rem;
+    }
+
+    .destination-card{
+        height: clamp(300px, 28vw, 420px);
+
+        h3{
+            left: 1.5rem;
+            bottom: 3.3rem;
+            font-size: 1.5rem;
+        }
+
+        a{
+            left: 1.5rem;
+            bottom: 1.1rem;
+            font-size: 1.3rem;
+        }
+
+        a:hover{
+            font-size: 1.35rem;
+        }
+    }
+
+
+    .destination-italy{
+        background-image: url(../img/destinations/italy-large.jpg);
+    }
+
+    .destination-norway{
+        background-image: url(../img/destinations/norway-large.jpg);   
+    }
+
+    .destination-bali{
+        background-image: url(../img/destinations/bali-large.jpg);
     }
 }
